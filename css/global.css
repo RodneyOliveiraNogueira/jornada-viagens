@@ -52,7 +52,7 @@ body {
   font-weight: var(--title-weight);
   margin: 0px;
   text-align: center;
-}
+  }
 
 .section-title hr {
   width: 180px;

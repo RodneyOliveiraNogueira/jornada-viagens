@@ -27,7 +27,7 @@ header {
   margin-top: 24px;
 }
 
-input[type="checkbox"]:checked ~ nav {
+input[type="checkbox"]:checked ~ .nav-menunav {
   display: block;
   position: absolute;
   top: 100%;
@@ -36,7 +36,7 @@ input[type="checkbox"]:checked ~ nav {
   background-color: var(--background-tertiary-color);
 }
 
-nav {
+.nav-menu nav {
   display: none;
 }
 

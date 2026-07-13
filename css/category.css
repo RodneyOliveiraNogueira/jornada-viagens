@@ -1,3 +1,6 @@
+.category {
+  padding: 88px 24px 0 24px;
+}
 ul.category-cards {
   list-style: none;
   padding: 0;
@@ -14,7 +17,6 @@ ul.category-cards {
   align-items: center;
   justify-content: center;
   gap: 16px;
-
   background-color: var(--background-secondary-color);
   border-radius: 8px;
 
@@ -29,13 +31,47 @@ ul.category-cards {
 }
 
 .card-text {
-  color: var(--text-primary-color); /* Usando sua variável #222222 */
-  font-weight: var(--title-weight); /* Usando seu peso de negrito (700) */
-  font-size: 28px; /* Ajustado para o padrão do Figma */
+  color: var(--text-primary-color);
+  font-weight: var(--title-weight);
+  font-size: 28px;
 }
 
 .card-link img {
   width: 80px;
   height: 80px;
-  object-fit: contain; /* Garante que a imagem não distorça ou amasse ao ser forçada para 80x80 */
+  object-fit: contain;
+}
+
+/* ==========================================================
+   TABLET (Mínimo de 768px): 2 colunas e 2 linhas
+   ========================================================== */
+@media screen and (min-width: 768px) {
+  ul.category-cards {
+    flex-direction: row; /* Alinha lado a lado */
+    flex-wrap: wrap; /* Permite quebrar linha quando não couber */
+    justify-content: center; /* Centraliza o bloco na tela */
+    gap: 32px; /* Mantém o espaçamento do Figma */
+  }
+}
+
+/* ==========================================================
+   DESKTOP / PC (Mínimo de 1024px): 1 linha com cards menores
+   ========================================================== */
+@media screen and (min-width: 1024px) {
+  ul.category-cards {
+    flex-wrap: nowrap; /* Garante que todos vão ficar na mesma linha */
+  }
+
+  .card-link {
+    /* Diminuímos o tamanho conforme a imagem do Figma (281.25px x 220px) */
+    width: 281px;
+    height: 220px;
+  }
+}
+
+/* As outras queries maiores (1440px, 1920px) herdam o comportamento
+   de 1024px, ficando centralizadas automaticamente */
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1920px) {
 }
