@@ -1,3 +1,8 @@
+.section-title {
+  width: 312px;
+  margin: 0 auto;
+}
+
 .category {
   padding: 88px 24px 0 24px;
 }
@@ -18,7 +23,7 @@ ul.category-cards {
   justify-content: center;
   gap: 16px;
   background-color: var(--background-secondary-color);
-  border-radius: 8px;
+  border-radius: 16px;
 
   /* Força o preenchimento a ficar DENTRO dos 280x200px */
   box-sizing: border-box;
@@ -30,10 +35,11 @@ ul.category-cards {
   text-align: center;
 }
 
-.card-text {
+h3.card-text {
   color: var(--text-primary-color);
   font-weight: var(--title-weight);
   font-size: 28px;
+  margin: 0;
 }
 
 .card-link img {
@@ -52,7 +58,9 @@ ul.category-cards {
     justify-content: center; /* Centraliza o bloco na tela */
     gap: 32px; /* Mantém o espaçamento do Figma */
   }
-}
+  .section-title {
+  width: 366px;
+ }
 
 /* ==========================================================
    DESKTOP / PC (Mínimo de 1024px): 1 linha com cards menores
