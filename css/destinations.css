@@ -5,3 +5,64 @@
   padding: 0;
   margin-bottom: 24px;
 }
+
+.destinations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img-item {
+  height: 312px;
+  width: 360px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.tokyo {
+  background: url("../img/tokyo-mobile.jpg") no-repeat center;
+}
+
+.osaka {
+  background: url("../img/osaka-mobile.jpg") no-repeat center;
+}
+
+.destinations h4 {
+  display: block;
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0 auto;
+}
+
+.destinations p {
+  margin-bottom: 24px;
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  /* .hero h2 {
+    padding: 88px 60px;
+    font-size: 32px;
+  } */
+}
+
+@media screen and (min-width: 1024px) {
+  /* .hero-img {
+    background: url("../img/hero-desktop.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .hero h2 {
+    padding: 88px 120px;
+  } */
+}
+
+@media screen and (min-width: 1920px) {
+  /* .hero h2 {
+    padding: 88px 160px;
+  } */
+}
