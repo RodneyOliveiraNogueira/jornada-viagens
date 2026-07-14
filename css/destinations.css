@@ -1,12 +1,17 @@
 .destinations-items header {
   display: block;
+  margin: 0 auto;
   background-color: transparent;
   position: static;
   padding: 0;
   margin-bottom: 24px;
 }
 
+/* Alterado para ocupar 100% da largura disponível com limite de 360px no mobile */
 .destinations {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,6 +26,7 @@
   background-position: center;
   margin: 0 auto;
 }
+
 .tokyo {
   background: url("../img/tokyo-mobile.jpg") no-repeat center;
 }
@@ -33,7 +39,7 @@
   display: block;
   font-size: 28px;
   font-weight: var(--title-weight);
-  margin: 0 auto;
+  margin: 24px 0;
 }
 
 .destinations p {
@@ -44,25 +50,127 @@
   text-align: left;
 }
 
+.destinations .button {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================
+   MEDIA QUERY: TABLET (Mínimo de 768px)
+   ========================================================== */
 @media screen and (min-width: 768px) {
-  /* .hero h2 {
-    padding: 88px 60px;
-    font-size: 32px;
-  } */
-}
-
-@media screen and (min-width: 1024px) {
-  /* .hero-img {
-    background: url("../img/hero-desktop.jpg") no-repeat center;
-    background-size: cover;
+  .tokyo {
+    background: url("../img/tokyo-tablet-desktop.jpg") no-repeat center;
   }
-  .hero h2 {
-    padding: 88px 120px;
-  } */
+
+  .osaka {
+    background: url("../img/osaka-tablet-desktop.jpg") no-repeat center;
+  }
+
+  .img-item {
+    width: 648px;
+    height: 452px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+
+  /* Agora o container se expande para 648px acompanhando o tamanho da foto */
+  .destinations {
+    max-width: 648px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
-@media screen and (min-width: 1920px) {
-  /* .hero h2 {
-    padding: 88px 160px;
-  } */
+/* ==========================================================
+   MEDIA QUERY: DESKTOP (Mínimo de 1024px)
+   ========================================================== */
+@media screen and (min-width: 1024px) {
+  .destinations {
+    max-width: 1024px; /* Ajustado para o limite físico da tela */
+    margin: 0 auto;
+  }
+
+  .destinations-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+  }
+
+  /* Os dois cartões agora têm exatamente os mesmos 488px, alinhando tudo */
+  .destino-tokyo,
+  .destino-osaka {
+    width: 488px; /* Ajustado para 488px */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-item {
+    width: 488px;
+    height: 452px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Força os textos e títulos a respeitarem os mesmos 488px da imagem */
+  .destino-tokyo h4,
+  .destino-osaka h4,
+  .destino-tokyo p,
+  .destino-osaka p {
+    width: 100%;
+    max-width: 488px; /* Ajustado para 488px */
+  }
+
+  /* Garante que o botão de 280px fique alinhado à esquerda de cada card */
+  .destino-tokyo .button,
+  .destino-osaka .button {
+    width: 280px;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    /* 588 + 588 + 24 (gap) = 1200px de largura máxima */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Removemos paddings extras se houver, pois a margem de 120px nas laterais é gerada automaticamente pelo margin auto em telas de 1440px (1440 - 1200 = 240px de sobra, ou seja, 120px para cada lado) */
+    padding: 0;
+  }
+
+  .destinations-items {
+    gap: 24px; /* O gap exato do Figma */
+  }
+
+  /* Aplica os 588px exatos nos cartões */
+  .destino-tokyo,
+  .destino-osaka {
+    width: 588px;
+  }
+
+  /* Ajusta as imagens para o tamanho real do Figma */
+  .img-item {
+    width: 588px;
+    height: 452px;
+  }
+
+  /* Ajusta o limite dos textos para acompanhar os 588px */
+  .destino-tokyo h4,
+  .destino-osaka h4,
+  .destino-tokyo p,
+  .destino-osaka p {
+    max-width: 588px;
+  }
 }
