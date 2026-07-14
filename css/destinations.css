@@ -1,12 +1,3 @@
-.destinations-items header {
-  display: block;
-  margin: 0 auto;
-  background-color: transparent;
-  position: static;
-  padding: 0;
-  margin-bottom: 24px;
-}
-
 /* Alterado para ocupar 100% da largura disponível com limite de 360px no mobile */
 .destinations {
   width: 100%;

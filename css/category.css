@@ -1,12 +1,6 @@
-.section-title {
-  width: 312px;
-  margin: 0 auto;
-}
 
-.category {
-  padding: 88px 24px 0 24px;
-  margin-bottom: 88px;
-}
+
+
 ul.category-cards {
   list-style: none;
   padding: 0;
@@ -59,9 +53,7 @@ h3.card-text {
     justify-content: center; /* Centraliza o bloco na tela */
     gap: 32px; /* Mantém o espaçamento do Figma */
   }
-  .section-title {
-  width: 366px;
- }
+
 
 /* ==========================================================
    DESKTOP / PC (Mínimo de 1024px): 1 linha com cards menores
