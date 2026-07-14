@@ -27,18 +27,11 @@
 }
 
 .destinations h4 {
-  display: block;
-  font-size: 28px;
-  font-weight: var(--title-weight);
   margin: 24px 0;
 }
 
 .destinations p {
   margin-bottom: 24px;
-  font-weight: var(--text-weight);
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: left;
 }
 
 .destinations .button {
