@@ -1,0 +1,33 @@
+.img-content {
+  max-width: 100%; /* Garante que a imagem nunca seja maior que sua coluna do grid */
+  height: auto; /* Mantém a proporção correta */
+  display: block;
+  width: 100%;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+  background-color: black;
+}
+
+.img-mala {
+  height: 254px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.img-passaportes {
+  height: 254px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  grid-column: span 1; /* DIZ PARA ELA OCUPAR 1 COLUNA */
+}
+.img-pessoas {
+  width: 100%;
+  height: 182px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
