@@ -1,29 +1,78 @@
 .payments .img-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* Substitua o height total por grid-template-rows para dar altura real às 2 linhas: */
   grid-template-rows: 254px 182px;
   gap: 24px;
   width: 100%;
-  max-width: 312px; /* Segura a largura para não vazar na tela mobile */
+  max-width: 312px;
   margin: 24px auto 0;
 }
 
-.payments .img-gallery .img.first {
-  background: url("../img/grid-mala.jpg") no-repeat center;
+.payments .content-container {
+  display: flex;
+}
+
+.payments .content-container .img-gallery .img.first {
+  background: url("../img/grid-mala-mobile-1.jpg") no-repeat center;
   background-size: cover;
 }
 
-.payments .img-gallery .img.second {
-  background: url("../img/grid-passaportes.jpg") no-repeat center;
+.payments .content-container .img-gallery .img.second {
+  background: url("../img/grid-passaportes-mobile-2.jpg") no-repeat center;
   background-size: cover;
 }
 
-.payments .img-gallery .img.third {
-  background: url("../img/grid-pessoas.jpg") no-repeat center;
+.payments .content-container .img-gallery .img.third {
+  background: url("../img/grid-pessoas-mobile-3.jpg") no-repeat center;
   background-size: cover;
 }
 
-.payments .img-gallery .img.colspan-2 {
+.payments .content-container .img-gallery .img.colspan-2 {
   grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .payments .content-container .img-gallery .img.first {
+    background: url("../img/grid-mala-tablet-1.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .img-gallery .img.second {
+    background: url("../img/grid-passaportes-tablet-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .img-gallery .img.third {
+    background: url("../img/grid-pessoas-tablet-3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .payments .content-container .img-gallery {
+    max-width: 648px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments .content-container .img-gallery .img.first {
+    background: url("../img/grid-mala-desktop-1.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .img-gallery .img.second {
+    background: url("../img/grid-passaportes-desktop-2.jpg") no-repeat center;
+    background-size: cover;
+  }
+
+  .payments .content-container .img-gallery .img.third {
+    background: url("../img/grid-pessoas-desktop-3.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .payments .content-container .img-gallery {
+    max-width: 790px;
+    margin: 0 auto;
+  }
+
+  .payments .content-container {
+    justify-content: space-between;
+  }
 }
