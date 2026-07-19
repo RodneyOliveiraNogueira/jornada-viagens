@@ -11,6 +11,10 @@
 .payments .content-title {
   margin: 0 0 24px 0;
 }
+.payments .content-container {
+  margin: 0 0 24px;
+}
+
 .payments .content-container .img-gallery .img.first {
   background: url("../img/grid-mala-mobile-1.jpg") no-repeat center;
   background-size: cover;
