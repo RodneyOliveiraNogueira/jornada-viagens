@@ -8,10 +8,9 @@
   margin: 24px auto 0;
 }
 
-.payments .content-container {
-  display: flex;
+.payments .content-title {
+  margin: 0 0 24px 0;
 }
-
 .payments .content-container .img-gallery .img.first {
   background: url("../img/grid-mala-mobile-1.jpg") no-repeat center;
   background-size: cover;
@@ -73,6 +72,7 @@
   }
 
   .payments .content-container {
+    display: flex;
     justify-content: space-between;
   }
 }
