@@ -9,7 +9,7 @@
 }
 
 .payments .content-container {
-  display: flex;
+  margin: 0 0 24px;
 }
 
 .payments .content-container .img-gallery .img.first {
@@ -73,6 +73,7 @@
   }
 
   .payments .content-container {
+    display: flex;
     justify-content: space-between;
   }
 }
