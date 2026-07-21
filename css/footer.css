@@ -41,3 +41,45 @@
   height: 32px;
   margin: 0 8px;
 }
+
+@media (min-width: 768px) {
+  .footer-img-background {
+    background: url("../img/footer-img-background-tablet.jpg") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+  }
+  .rodape-conteudo p {
+    max-width: 591px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .rodape-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 120px;
+  }
+
+  .rodape-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .rodape-conteudo p {
+    max-width: 591px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .rodape-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+}
