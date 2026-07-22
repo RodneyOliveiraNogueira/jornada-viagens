@@ -6,6 +6,12 @@
   height: 400px;
 }
 
+.rodape-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .rodape-conteudo {
   background-color: black;
   display: flex;
@@ -68,6 +74,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: flex-start;
   }
 
   .rodape-conteudo p {
