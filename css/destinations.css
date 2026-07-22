@@ -26,7 +26,7 @@
   background: url("../img/osaka-mobile.jpg") no-repeat center;
 }
 
-.destinations h4 {
+.destinations h3 {
   margin: 24px 0;
 }
 
@@ -109,8 +109,8 @@
   }
 
   /* Força os textos e títulos a respeitarem os mesmos 488px da imagem */
-  .destino-tokyo h4,
-  .destino-osaka h4,
+  .destino-tokyo h3,
+  .destino-osaka h3,
   .destino-tokyo p,
   .destino-osaka p {
     width: 100%;
@@ -151,8 +151,8 @@
   }
 
   /* Ajusta o limite dos textos para acompanhar os 588px */
-  .destino-tokyo h4,
-  .destino-osaka h4,
+  .destino-tokyo h3,
+  .destino-osaka h3,
   .destino-tokyo p,
   .destino-osaka p {
     max-width: 588px;
