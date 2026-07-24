@@ -80,3 +80,26 @@
     justify-content: space-between;
   }
 }
+
+/* Travel packages */
+
+.page-packages .payments .content-container .cash {
+  margin: 0 auto 24px;
+  text-align: left;
+  font-weight: var(--title-weight);
+  font-size: 26px;
+}
+
+
+
+.page-packages .payments .packages-gallery .img.first {
+  background-image: url("../img/packages-gallery-first-mobile.jpg");
+}
+
+.page-packages .payments .packages-gallery .img.second {
+  background-image: url("../img/packages-gallery-secondary-mobile.jpg");
+}
+
+.page-packages .payments .packages-gallery .img.third {
+  background-image: url("../img/packages-gallery-third-mobile.jpg");
+}

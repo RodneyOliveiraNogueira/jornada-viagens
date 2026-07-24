@@ -41,6 +41,17 @@
 .travel-packages .hero-img {
   background: url("../img/package-hero-japao-mobile.jpg") no-repeat center;
   background-size: cover;
+  margin-bottom: 88px;
+  padding-top: 65px; 
+}
+
+.travel-hero-content {
+  width: 312px;
+  height: 330px;
+  margin-left: 24px;
+  line-height: 1.2;
+  text-align: left;
+
 }
 
 .travel-packages h1 {
@@ -48,8 +59,6 @@
   font-size: 48px;
   font-weight: var(--title-weight);
   text-align: left;
-  padding: 88px 24px;
-  margin: 0px;
   line-height: 100%;
   text-align: left;
 }
@@ -58,14 +67,13 @@
   height: 4px;
   background-color: var(--secondary-color);
   border: none;
-  margin: 0;
+  margin: 16px 0 32px;
 }
 
 .travel-packages p {
   color: var(--text-secondary-color);
   font-size: 20px;
   text-align: left;
-  padding: 0px 24px;
   margin: 0px;
   line-height: 32px;
   text-align: left;
