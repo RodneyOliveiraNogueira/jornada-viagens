@@ -91,9 +91,32 @@
   }
 }
 
-/* Página de pacotes de viagens */
+/*==================== Página de pacotes de viagens ======================== */
 
 .page-packages .footer-img-background {
   background: url("../img/package-hero-footer-mobile.jpg") no-repeat center;
   background-size: cover;
+}
+
+/* Package Tablet */
+
+@media (min-width: 768px) {
+  .page-packages .footer-img-background {
+    background: url("../img/package-hero-footer-tablet.jpg") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Package Desktop */
+@media (min-width: 1024px) {
+  .page-packages .footer-img-background {
+    background: url("../img/package-hero-footer-desktop.jpg") no-repeat center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+  }
 }

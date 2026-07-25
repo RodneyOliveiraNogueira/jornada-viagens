@@ -123,3 +123,51 @@
 }
 
 /* Package Desktop */
+
+@media screen and (min-width: 1024px) {
+  .page-packages .payments .packages-gallery .img.first {
+    background-image: url("../img/package-gallery-first-desktop.jpg");
+  }
+
+  .page-packages .payments .packages-gallery .img.second {
+    background-image: url("../img/package-gallery-secondary-desktop.jpg");
+  }
+
+  .page-packages .payments .packages-gallery .img.third {
+    background-image: url("../img/package-gallery-third-desktop.jpg");
+  }
+
+  .page-packages .payments a {
+    display: NONE;
+  }
+  /* Container que segura o bloco de texto + galeria */
+  .page-packages .payments .content-container {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  /* Bloco de texto da esquerda */
+  .page-packages .payments .payment-info {
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    max-width: 100%;
+  }
+
+  /* Espaçamento entre as linhas de texto se necessário */
+  .page-packages .payments .payment-info .cash,
+  .page-packages .payments .payment-info .content-title,
+  .page-packages .payments .payment-info .content-text {
+    margin-bottom: 16px; /* Ou ajusta conforme a necessidade */
+  }
+
+  .page-packages .payments .content-container .cash {
+    text-align: left;
+    width: 100%;
+  }
+
+  .page-packages .payments .section-title h2 {
+    margin-top: 104px;
+  }
+}
