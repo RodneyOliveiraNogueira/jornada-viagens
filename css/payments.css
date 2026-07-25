@@ -93,13 +93,13 @@
 
 
 .page-packages .payments .packages-gallery .img.first {
-  background-image: url("../img/packages-gallery-first-mobile.jpg");
+  background-image: url("../img/package-gallery-first-mobile.jpg");
 }
 
 .page-packages .payments .packages-gallery .img.second {
-  background-image: url("../img/packages-gallery-secondary-mobile.jpg");
+  background-image: url("../img/package-gallery-secondary-mobile.jpg");
 }
 
 .page-packages .payments .packages-gallery .img.third {
-  background-image: url("../img/packages-gallery-third-mobile.jpg");
+  background-image: url("../img/package-gallery-third-mobile.jpg");
 }

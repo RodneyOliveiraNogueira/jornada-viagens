@@ -90,3 +90,10 @@
     gap: 8px;
   }
 }
+
+/* Página de pacotes de viagens */
+
+.page-packages .footer-img-background {
+  background: url("../img/package-hero-footer-mobile.jpg") no-repeat center;
+  background-size: cover;
+}
