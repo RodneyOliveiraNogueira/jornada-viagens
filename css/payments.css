@@ -81,7 +81,7 @@
   }
 }
 
-/* Travel packages */
+/* ============Pagina pacotes de viagens============= */
 
 .page-packages .payments .content-container .cash {
   margin: 0 auto 24px;
@@ -89,8 +89,6 @@
   font-weight: var(--title-weight);
   font-size: 26px;
 }
-
-
 
 .page-packages .payments .packages-gallery .img.first {
   background-image: url("../img/package-gallery-first-mobile.jpg");
@@ -103,3 +101,25 @@
 .page-packages .payments .packages-gallery .img.third {
   background-image: url("../img/package-gallery-third-mobile.jpg");
 }
+
+/* Package Tablet */
+
+@media screen and (min-width: 768px) {
+  .page-packages .payments .packages-gallery .img.first {
+    background-image: url("../img/package-gallery-first-tablet.jpg");
+  }
+
+  .page-packages .payments .packages-gallery .img.second {
+    background-image: url("../img/package-gallery-secondary-tablet.jpg");
+  }
+
+  .page-packages .payments .packages-gallery .img.third {
+    background-image: url("../img/package-gallery-third-tablet.jpg");
+  }
+
+  .page-packages .payments a {
+    display: NONE;
+  }
+}
+
+/* Package Desktop */

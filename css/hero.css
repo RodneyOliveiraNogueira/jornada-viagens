@@ -36,25 +36,24 @@
   }
 }
 
-/* Pacotes de viagens */
+/* ============= Pacotes de viagens ============== */
 
-.travel-packages .hero-img {
+.page-packages .travel-packages .hero-img {
   background: url("../img/package-hero-japao-mobile.jpg") no-repeat center;
   background-size: cover;
   margin-bottom: 88px;
-  padding-top: 65px; 
+  padding-top: 65px;
 }
 
-.travel-hero-content {
+.page-packages .travel-hero-content {
   width: 312px;
   height: 330px;
   margin-left: 24px;
   line-height: 1.2;
   text-align: left;
-
 }
 
-.travel-packages h1 {
+.page-packages .travel-packages h1 {
   color: var(--text-secondary-color);
   font-size: 48px;
   font-weight: var(--title-weight);
@@ -62,7 +61,7 @@
   line-height: 100%;
   text-align: left;
 }
-.travel-packages hr {
+.page-packages .travel-packages hr {
   width: 180px;
   height: 4px;
   background-color: var(--secondary-color);
@@ -70,11 +69,37 @@
   margin: 16px 0 32px;
 }
 
-.travel-packages p {
+.page-packages .travel-packages p {
   color: var(--text-secondary-color);
   font-size: 20px;
   text-align: left;
   margin: 0px;
   line-height: 32px;
-  text-align: left;
+}
+
+/* ============= Package Tablet ============== */
+
+@media screen and (min-width: 768px) {
+  .page-packages .travel-packages .hero-img {
+    background: url("../img/package-hero-japao-mobile.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+    padding: 209px 69px 107px 120px;
+  }
+  .page-packages .travel-hero-content {
+    width: 579px;
+    height: 303px;
+    margin-left: 24px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .page-packages .travel-packages p {
+    color: var(--text-secondary-color);
+    font-size: 32px;
+    text-align: left;
+    margin: 0px;
+    line-height: 32px;
+  }
 }
