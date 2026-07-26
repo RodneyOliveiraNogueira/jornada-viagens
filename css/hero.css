@@ -106,14 +106,14 @@
 
 /* ============= Página do Blog ============== */
 
-.page-blog .travel-packages .hero-img {
+.page-blog .blog .hero-img {
   background: url("../img/blog-hero-mobile.jpg") no-repeat center;
   background-size: cover;
   margin-bottom: 88px;
   padding-top: 65px;
 }
 
-.page-blog .travel-hero-content {
+.page-blog .blog .blog-hero-content {
   width: 312px;
   height: 330px;
   margin-left: 24px;
@@ -121,7 +121,7 @@
   text-align: left;
 }
 
-.page-blog .travel-packages h1 {
+.page-blog .blog h1 {
   color: var(--text-secondary-color);
   font-size: 48px;
   font-weight: var(--title-weight);
@@ -129,7 +129,7 @@
   line-height: 100%;
   text-align: left;
 }
-.page-blog .travel-packages hr {
+.page-blog .blog hr {
   width: 180px;
   height: 4px;
   background-color: var(--secondary-color);
@@ -137,7 +137,7 @@
   margin: 16px 0 32px;
 }
 
-.page-blog .travel-packages p {
+.page-blog .blog p {
   color: var(--text-secondary-color);
   font-size: 20px;
   text-align: left;
@@ -148,14 +148,14 @@
 /* ============= Blog Tablet/Desktop ============== */
 
 @media screen and (min-width: 768px) {
-  .page-blog .travel-packages .hero-img {
+  .page-blog .blog-packages .hero-img {
     background: url("../img/blog-hero-tablet.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     height: 620px;
     padding: 159px 94px 158px 95px;
   }
-  .page-blog .travel-hero-content {
+  .page-blog .blog .blog-hero-content {
     width: 579px;
     height: 303px;
     margin-left: 24px;
@@ -163,7 +163,7 @@
     text-align: left;
   }
 
-  .page-blog .travel-packages p {
+  .page-blog .blog p {
     color: var(--text-secondary-color);
     font-size: 32px;
     text-align: left;
