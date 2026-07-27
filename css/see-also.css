@@ -1,4 +1,4 @@
-.destinations {
+.page-blog .see-also {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
@@ -9,33 +9,41 @@
   flex-wrap: wrap;
 }
 
-.img-item {
+.page-blog .see-also .img-item {
   height: 312px;
   width: 360px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   margin: 0 auto;
 }
 
-.tokyo {
-  background: url("../img/tokyo-mobile.jpg") no-repeat center;
+.page-blog .see-also .img-item.see-osaka {
+  background-image: url("../img/blog-see-img-osaka-mobile.jpg");
+}
+.page-blog .see-also .img-item.see-hiroshima {
+  background-image: url("../img/blog-see-img-hiroshima-mobile.jpg");
 }
 
-.osaka {
-  background: url("../img/osaka-mobile.jpg") no-repeat center;
+.page-blog .see-also .img-item.see-kyoto {
+  background-image: url("../img/blog-see-img-kyoto-mobile.jpg");
 }
 
-.destinations h3 {
+.page-blog .see-also h3 {
   margin: 24px 0;
 }
 
-.destinations p {
+.page-blog .see-also p {
   margin-bottom: 24px;
 }
 
-.destinations .button {
+.page-blog .see-also .button {
   width: 100%;
   margin-bottom: 40px;
+}
+
+.page-blog .see-also hr {
+  margin:0 auto;
 }
 
 /* ==========================================================
@@ -149,7 +157,3 @@
     max-width: 588px;
   }
 }
-
-
-
-
