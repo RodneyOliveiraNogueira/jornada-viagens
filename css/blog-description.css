@@ -26,13 +26,20 @@
   background: url("../img/blog-img-tokyo-mobile.jpg") no-repeat center;
 }
 
+.page-blog .description .legenda {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-primary-color);
+  font-size: 14px;
+
+}
 
 
 /* ==========================================================
    MEDIA QUERY: TABLET (Mínimo de 768px)
    ========================================================== */
 @media screen and (min-width: 768px) {
-  .tokyo {
+  .page-blog .description .tokyo {
     background: url("../img/tokyo-tablet-desktop.jpg") no-repeat center;
   }
 
