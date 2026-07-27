@@ -9,13 +9,12 @@
   flex-wrap: wrap;
 }
 
-
 .page-blog .description .img-item {
   height: 312px;
   width: 360px;
   background-size: cover;
   background-position: center;
-  margin: 0 ;
+  margin: 0;
 }
 
 .page-blog .description .img-chegada {
@@ -31,44 +30,39 @@
   margin-top: 8px;
   color: var(--text-primary-color);
   font-size: 14px;
-
 }
-
 
 /* ==========================================================
    MEDIA QUERY: TABLET (Mínimo de 768px)
    ========================================================== */
 @media screen and (min-width: 768px) {
-  .page-blog .description .tokyo {
-    background: url("../img/tokyo-tablet-desktop.jpg") no-repeat center;
+  /* 1. Atualize o container pai para caber o layout de tablet */
+  .page-blog .description {
+    max-width: 648px;
   }
 
-  .osaka {
-    background: url("../img/osaka-tablet-desktop.jpg") no-repeat center;
-  }
-
-  .img-item {
+  .page-blog .description .img-tokyo {
+    background: url("../img/blog-img-tokyo-tablet.jpg") no-repeat center;
     width: 648px;
-    height: 452px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     margin: 0 auto;
   }
 
-  .destinations .button {
-    width: 280px;
+  .page-blog .description .item-acomodacao {
+    width: 100%;
+    max-width: 648px;
+    margin: 0;
   }
 
-  /* Agora o container se expande para 648px acompanhando o tamanho da foto */
-  .destinations {
-    max-width: 648px;
-    margin: 0 auto;
+  .page-blog .description .item-hotel {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
   }
+
 }
 
 /* ==========================================================

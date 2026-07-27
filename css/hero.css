@@ -103,21 +103,28 @@
   }
 }
 
-/* ============= Página do Blog ============== */
+/* ============= Página do Blog (MOBILE) ============== */
 
-.page-blog .hero-blog .hero-img {
+.page-blog .hero-img {
   background: url("../img/blog-hero-mobile.jpg") no-repeat center;
   background-size: cover;
-  margin-bottom: 88px;
+  height: 460px;
   padding-top: 65px;
- }
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
-.page-blog .hero-blog .blog-hero-content {
+.page-blog .hero-blog .hero-content-blog {
   width: 312px;
   height: 330px;
   margin-left: 24px;
   line-height: 1.2;
   text-align: left;
+  margin-top: 30px;
+  margin-left: 24px;
 }
 
 .page-blog .hero-blog h1 {
@@ -149,11 +156,10 @@
   .page-blog .hero-blog .hero-img {
     background: url("../img/blog-hero-tablet.jpg") no-repeat center;
     background-size: cover;
-    width: 100%;
     height: 620px;
     padding: 159px 94px 158px 95px;
   }
-  .page-blog .hero-blog .blog-hero-content {
+  .page-blog .hero-blog .hero-content-blog {
     width: 579px;
     height: 303px;
     margin-left: 24px;
