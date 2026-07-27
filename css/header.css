@@ -111,18 +111,13 @@ input[type="checkbox"]:checked ~ .nav-menunav {
 
 /* ================= Pacotes de viagens ==================== */
 
-.page-packages .list-links li  .active {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-}
-
-/* ================= Página Blog ==================== */
-
+.page-packages .list-links li  .active,
 .page-blog .list-links li  .active {
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
 
-@media screen and (min-width: 768px) {
-  
-}
+
+
+
+
