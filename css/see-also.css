@@ -43,45 +43,40 @@
 }
 
 .page-blog .see-also hr {
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* ==========================================================
    MEDIA QUERY: TABLET (Mínimo de 768px)
    ========================================================== */
+
 @media screen and (min-width: 768px) {
-  .tokyo {
-    background: url("../img/tokyo-tablet-desktop.jpg") no-repeat center;
-  }
-
-  .osaka {
-    background: url("../img/osaka-tablet-desktop.jpg") no-repeat center;
-  }
-
-  .img-item {
-    width: 648px;
-    height: 452px;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-  }
-
-  .destinations .button {
-    width: 280px;
-  }
-
-  /* Agora o container se expande para 648px acompanhando o tamanho da foto */
-  .destinations {
+  .page-blog .see-also {
+    width: 100%;
     max-width: 648px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
-}
 
+  .page-blog .see-also .img-item {
+    width: 648px;
+    height: 300px;
+  }
+  .page-blog .see-also .img-item.see-osaka {
+    background-image: url("../img/blog-see-img-osaka-tablet.jpg");
+  }
+  .page-blog .see-also .img-item.see-hiroshima {
+    background-image: url("../img/blog-see-img-hiroshima-tablet.jpg");
+  }
+
+  .page-blog .see-also .img-item.see-kyoto {
+    background-image: url("../img/blog-see-img-kyoto-tablet.jpg");
+  }
+
+  .page-blog .see-also .button {
+  width: 280px;
+  height: 64px;
+  margin-bottom: 40px;
+}
+}
 /* ==========================================================
    MEDIA QUERY: DESKTOP (Mínimo de 1024px)
    ========================================================== */
