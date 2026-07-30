@@ -119,3 +119,55 @@
     margin-top: -32px;
   }
 }
+
+/* ==========================================================
+   MEDIA QUERY: TABLET (Mínimo de 1024px)
+   ========================================================== */
+
+@media screen and (min-width: 1024px) {
+  .page-contact .contact-section {
+    width: 100%;
+    max-width: 900px;
+  }
+
+  .page-contact .contact-section .contact-container p {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 56px 60px 56px 60px;
+  }
+
+  .page-contact .contact-form {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
+/* ==========================================================
+   MEDIA QUERY: DESKTOP (Mínimo de 1440px)
+   ========================================================== */
+@media screen and;
+(min-width: 1440px) {
+  .page-contact .contact-section {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .page-contact .contact-section .contact-container p {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 56px 60px 56px 60px;
+  }
+
+  .page-contact .contact-form {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
