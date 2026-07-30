@@ -175,3 +175,49 @@
     line-height: 1.5;
   }
 }
+
+/* ============= Página de Contato (MOBILE) ============== */
+
+.page-contact .hero-img {
+  background: url("../img/contact-hero-img-mobile.jpg") no-repeat center;
+  background-size: cover;
+  height: 460px;
+  padding-top: 65px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+.page-contact .hero-content {
+  width: 312px;
+  height: 330px;
+  margin-left: 24px;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 24px;
+}
+
+.page-contact .hero-content h1 {
+  color: var(--text-secondary-color);
+  font-size: 48px;
+  font-weight: var(--title-weight);
+  text-align: left;
+  line-height: 100%;
+}
+.page-blog .hero-blog hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px 0 32px;
+}
+
+.page-blog .hero-blog p {
+  color: var(--text-secondary-color);
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  line-height: 32px;
+}
