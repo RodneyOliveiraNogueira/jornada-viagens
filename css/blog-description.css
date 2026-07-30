@@ -32,11 +32,14 @@
   font-size: 14px;
 }
 
+.page-blog .description .group-text h3 {
+  margin: 0 0 24px;
+}
+
 /* ==========================================================
    MEDIA QUERY: TABLET (Mínimo de 768px)
    ========================================================== */
 @media screen and (min-width: 768px) {
-  /* 1. Atualize o container pai para caber o layout de tablet */
   .page-blog .description {
     max-width: 648px;
   }
@@ -60,83 +63,89 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
-
 }
 
 /* ==========================================================
-   MEDIA QUERY: DESKTOP (Mínimo de 1024px)
+   MEDIA QUERY: TABLET (Mínimo de 1024px)
    ========================================================== */
 @media screen and (min-width: 1024px) {
-  .destinations {
-    max-width: 1024px; /* Ajustado para o limite físico da tela */
+  .page-blog .description {
+    max-width: 900px;
     margin: 0 auto;
   }
 
-  .destinations-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 14px;
+  .page-blog .description .img-tokyo {
+    background: url("../img/blog-img-tokyo-tablet.jpg") no-repeat center;
     width: 100%;
-  }
-
-  .destino-tokyo,
-  .destino-osaka {
-    width: 488px; /* Ajustado para 488px */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-item {
-    width: 488px;
-    height: 452px;
+    max-width: 900px;
+    height: 300px;
     background-size: cover;
     background-position: center;
+    margin: 0 auto;
   }
 
-  .destino-tokyo h3,
-  .destino-osaka h3,
-  .destino-tokyo p,
-  .destino-osaka p {
+  .page-blog .description .item-acomodacao {
     width: 100%;
-    max-width: 488px;
+    max-width: 900px;
+    margin: 0;
   }
 
-  .destino-tokyo .button,
-  .destino-osaka .button {
-    width: 280px;
-    margin-right: auto;
+  .page-blog .description .item-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
+/* ==========================================================
+   MEDIA QUERY: DESKTOP (Mínimo de 1440px)
+   ========================================================== */
 @media screen and (min-width: 1440px) {
-  .destinations {
+  .page-blog .description {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0;
   }
 
-  .destinations-items {
-    gap: 24px;
-  }
-
-  .destino-tokyo,
-  .destino-osaka {
+  .group-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
     width: 588px;
   }
 
-  .img-item {
+  .page-blog .description .img-chegada {
+    background: url("../img/blog-img-chegada-desktop.jpg") no-repeat center;
     width: 588px;
-    height: 452px;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 0 24px;
   }
 
-  .destino-tokyo h3,
-  .destino-osaka h3,
-  .destino-tokyo p,
-  .destino-osaka p {
-    max-width: 588px;
+  .page-blog .description .img-tokyo {
+    background: url("../img/blog-img-tokyo-desktop.jpg") no-repeat center;
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  .page-blog .description .item-acomodacao {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
+  }
+
+  .page-blog .description .item-hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

@@ -72,83 +72,63 @@
   }
 
   .page-blog .see-also .button {
-  width: 280px;
-  height: 64px;
-  margin-bottom: 40px;
+    width: 280px;
+    height: 64px;
+    margin-bottom: 40px;
+  }
 }
-}
+
 /* ==========================================================
-   MEDIA QUERY: DESKTOP (Mínimo de 1024px)
+   MEDIA QUERY: TABLET (Mínimo de 1024px)
    ========================================================== */
+
 @media screen and (min-width: 1024px) {
-  .destinations {
-    max-width: 1024px; /* Ajustado para o limite físico da tela */
-    margin: 0 auto;
+  .page-blog .see-also {
+    width: 100%;
+    max-width: 900px;
   }
 
-  .destinations-items {
+  .page-blog .see-also .img-item {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+  }
+}
+
+/* ==========================================================
+   MEDIA QUERY: DESKTOP (Mínimo de 1440px)
+   ========================================================== */
+@media screen and (min-width: 1440px) {
+  .page-blog .see-also .see-items {
+    width: 100%;
+    max-width: 384px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    gap: 14px;
-    width: 100%;
-  }
-
-  .destino-tokyo,
-  .destino-osaka {
-    width: 488px; /* Ajustado para 488px */
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img-item {
-    width: 488px;
-    height: 452px;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .destino-tokyo h3,
-  .destino-osaka h3,
-  .destino-tokyo p,
-  .destino-osaka p {
-    width: 100%;
-    max-width: 488px;
-  }
-
-  .destino-tokyo .button,
-  .destino-osaka .button {
-    width: 280px;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .destinations {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .destinations-items {
     gap: 24px;
   }
 
-  .destino-tokyo,
-  .destino-osaka {
-    width: 588px;
+  .page-blog .see-also .img-item {
+    width: 384px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .page-blog .see-also .img-item.see-osaka {
+    background-image: url("../img/blog-see-img-osaka-mobile.jpg");
+  }
+  .page-blog .see-also .img-item.see-hiroshima {
+    background-image: url("../img/blog-see-img-hiroshima-mobile.jpg");
   }
 
-  .img-item {
-    width: 588px;
-    height: 452px;
+  .page-blog .see-also .img-item.see-kyoto {
+    background-image: url("../img/blog-see-img-kyoto-mobile.jpg");
   }
 
-  .destino-tokyo h3,
-  .destino-osaka h3,
-  .destino-tokyo p,
-  .destino-osaka p {
-    max-width: 588px;
+  .page-blog .see-also .button {
+    width: 280px;
+    height: 64px;
+    margin-bottom: 40px;
   }
 }
