@@ -112,7 +112,8 @@ input[type="checkbox"]:checked ~ .nav-menunav {
 /* ================= Pacotes de viagens ==================== */
 
 .page-packages .list-links li  .active,
-.page-blog .list-links li  .active {
+.page-blog .list-links li  .active,
+.page-contact .list-links li  .active {
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }

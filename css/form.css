@@ -86,3 +86,36 @@
   font-weight: bold;
   margin-top: -32px;
 }
+
+/*=======================Tablet 768px================*/
+
+@media screen and (min-width: 768px) {
+  .page-contact .contact-section {
+    width: 100%;
+    max-width: 768px;
+    margin: 64px auto;
+  }
+
+  .page-contact .contact-section .contact-container p {
+    width: 100%;
+    max-width: 648px;
+    height: auto;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 56px 60px;
+  }
+
+  .page-contact .contact-form {
+    width: 100%;
+    max-width: 648px;
+    margin: 64px auto;
+  }
+
+  .page-contact .contact-form button {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-top: -32px;
+  }
+}
