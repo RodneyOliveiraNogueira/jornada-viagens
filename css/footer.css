@@ -126,3 +126,11 @@
 .page-blog .rodape.blog {
   margin-top: 44px;
 }
+
+
+/*==================== Página de Contatos ======================== */
+
+.page-contact .footer-img-background {
+  background: url("../img/contact-footer-img-mobile.jpg") no-repeat center;
+  background-size: cover;
+}

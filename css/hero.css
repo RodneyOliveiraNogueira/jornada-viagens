@@ -189,7 +189,7 @@
   margin-left: -50vw;
   margin-right: -50vw;
 }
-.page-contact .hero-content {
+.page-contact .hero-contact .hero-content-contact {
   width: 312px;
   height: 330px;
   margin-left: 24px;
@@ -199,14 +199,14 @@
   margin-left: 24px;
 }
 
-.page-contact .hero-content h1 {
+.page-contact .hero-contact h1 {
   color: var(--text-secondary-color);
   font-size: 48px;
   font-weight: var(--title-weight);
   text-align: left;
   line-height: 100%;
 }
-.page-blog .hero-blog hr {
+.page-contact .hero-contact hr {
   width: 180px;
   height: 4px;
   background-color: var(--secondary-color);
@@ -214,7 +214,7 @@
   margin: 16px 0 32px;
 }
 
-.page-blog .hero-blog p {
+.page-contact .hero-contact p {
   color: var(--text-secondary-color);
   font-size: 20px;
   text-align: left;

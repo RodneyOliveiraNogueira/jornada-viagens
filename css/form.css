@@ -1,0 +1,88 @@
+.page-contact .section-title h2 {
+  font-size: 32px;
+}
+
+.page-contact .section-title hr {
+  margin-bottom: 56px;
+}
+.page-contact .contact-container p {
+  width: 312px;
+  height: 252px;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+/* ==========Formulário de contato============== */
+
+.page-contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  width: 312px;
+  margin: 64px auto;
+}
+
+/* Regra única para todos os placeholders */
+.page-contact .contact-form ::placeholder {
+  font-size: 20px;
+  line-height: 32px;
+  color: #8c8c8c;
+}
+
+/* Inputs padrão: apenas linha inferior */
+.page-contact .contact-form input {
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  border-radius: 0;
+  background: transparent;
+  outline: none;
+}
+
+/* Estado de foco (linha vermelha) */
+.page-contact .contact-form input:focus {
+  border-bottom: 4px solid var(--secondary-color);
+  color: var(--text-primary-color);
+}
+
+/* Mudar a cor do placeholder quando o campo recebe o foco */
+.page-contact .contact-form input:focus::placeholder {
+  color: var(--text-primary-color);
+}
+
+/* Label do campo de mensagem */
+.page-contact .contact-form label[for="message"] {
+  display: block;
+  font-size: 20px;
+  line-height: 32px;
+  color: #8c8c8c;
+  margin-bottom: 8px;
+}
+
+/* Textarea: caixa delimitada completa */
+.page-contact .contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+}
+
+/* Botão de envio */
+.page-contact .contact-form button {
+  background-color: var(--primary-color);
+  color: var(--text-secondary-color);
+  height: 64px;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: -32px;
+}
