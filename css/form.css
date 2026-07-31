@@ -28,7 +28,7 @@
 .page-contact .contact-form ::placeholder {
   font-size: 20px;
   line-height: 32px;
-  color: #8c8c8c;
+  color:#666666;
 }
 
 /* Inputs padrão: apenas linha inferior */
@@ -58,7 +58,7 @@
   display: block;
   font-size: 20px;
   line-height: 32px;
-  color: #8c8c8c;
+  color: #666666;
   margin-bottom: 8px;
 }
 
