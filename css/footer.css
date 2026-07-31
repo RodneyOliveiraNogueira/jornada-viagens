@@ -128,9 +128,31 @@
 }
 
 
-/*==================== Página de Contatos ======================== */
+/*==================== Página de Contatos (Mobile) ======================== */
 
 .page-contact .footer-img-background {
   background: url("../img/contact-footer-img-mobile.jpg") no-repeat center;
   background-size: cover;
+  height: 400px;
+}
+
+/*==================== Página de Contatos (Tablet) ======================== */
+
+@media (min-width: 768px) {
+  .page-contact .footer-img-background {
+    background: url("../img/contact-footer-img-tablet.jpg") no-repeat center;
+    background-size: cover;
+    height: 600px;
+  }
+}
+
+
+/*==================== Página de Contatos (Desktop) ======================== */
+
+@media (min-width: 1024px) {
+  .page-contact .footer-img-background {
+    background: url("../img/contact-footer-img-desktop.jpg") no-repeat center;
+    background-size: cover;
+
+  }
 }

@@ -275,3 +275,29 @@
     margin: 0;
   }
 }
+
+/* ============= Página de Contato (DESKTOP) ============== */
+
+@media screen and (min-width: 1024px) {
+  .page-contact .hero-img {
+    background: url("../img/contact-hero-img-desktop.jpg") no-repeat center;
+    background-size: cover;
+
+    width: 100%;
+    max-width: 1440px;
+    height: 620px;
+    margin: 0 auto;
+
+    /* Muda o alinhamento para a esquerda e adiciona a margem do Figma */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 120px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+  }
+
+  .page-contact .hero-contact .hero-content-contact {
+    margin: 0; /* Remove o margin: 0 auto que centralizava a caixa */
+    max-width: 579px;
+  }
+}
